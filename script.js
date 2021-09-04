@@ -114,8 +114,8 @@ function changeBoardSize() {
     } else if (newValue < 5) {
       lines = 5;
       squareLines(lines);
-    } else if (newValue > 50) {
-      lines = 50;
+    } else if (newValue > (window.screen.width / 40)) {
+      lines = 10;
       squareLines(lines);
     } else {
       lines = inputBox.value;
